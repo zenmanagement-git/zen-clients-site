@@ -631,13 +631,13 @@ var R={
   return '<div class="eyebrow mono rv">CASE STUDY | 2026 CAMPAIGNS</div>'+
   '<div class="body cover-wrap" style="display:grid;grid-template-columns:minmax(0,1.3fr) minmax(240px,.7fr);gap:5vw;align-items:center;margin-top:0">'+
    '<div><h1 class="title rv" style="--d:1;font-size:clamp(52px,8.6vw,150px);max-width:12ch;margin-top:0">Elite Gaming Inc</h1>'+
-   '<div class="rv cologos" style="--d:2" role="group" aria-label="OO5 and The Lotus Brands"><img src="logo-oo5.png" alt="Odds On 5 logo"><img class="lt" src="logo-lotus.jpg" alt="The Lotus logo"></div></div>'+
+   '<div class="rv cologos" style="--d:2" role="group" aria-label="Odds On 5"><img src="logo-oo5.png" alt="Odds On 5 logo"></div></div>'+
    '<div style="position:relative;max-width:420px;justify-self:center;width:100%;container-type:inline-size">'+ringSVG()+
     '<div class="rv" style="--d:4;position:absolute;inset:0;display:grid;place-content:center;text-align:center;padding:0 12cqw">'+cnt(723,'%').replace('class="num"','class="num cover-num"')+'<span class="mono" style="margin-top:3cqw;color:var(--ink2);letter-spacing:.1em;line-height:1.6;font-size:min(3cqw,13px)">Sign ups, from 44 to 362<br>Months 1 and 2</span></div></div>'+
   '</div>';
  },
  summary:function(){
-  return '<div class="body"><p class="lead rv" style="--d:2">Elite Gaming Inc entered the World Cup 2026 window with a low social baseline and a regulated crypto gaming category. Zen Management® built the positioning, sponsor and sales assets, affiliate programme and investor decks that supported USD $250K and USD $1M in funding for two of their brands, Odds On 5 (OO5) and Lotus (Under NDA).</p>'+
+  return '<div class="body"><p class="lead rv" style="--d:2">Elite Gaming Inc entered the World Cup 2026 window with a low social baseline and a regulated crypto gaming category. Zen Management® built the positioning, sponsor and sales assets, affiliate programme and investor decks that supported USD $250K and USD $1M in funding for two of their brands.</p>'+
   '<div class="stats">'+
    '<div class="stat rv" style="--d:3"><span class="mono">Published</span>'+cnt(88)+'<span class="cap">posts in Month 1</span></div>'+
    '<div class="stat rv" style="--d:4"><span class="mono">Sign ups</span>'+cnt(723,'%')+'<span class="cap">from 44 in the 39 day baseline to 362 across Months 1 and 2 (70 days)</span></div>'+
@@ -676,9 +676,8 @@ var R={
    /* laptop */
    '<div class="dev on" data-k="deck"><div style="width:min(820px,100%)"><div class="laptop" style="width:100%"><div class="lid"><div class="lscreen" id="lscreen"><div class="slides" id="slides">'+
      '<div class="ds on" style="padding:0;background:#fff"><img src="deck1.jpg" alt="Investor deck cover slide" style="width:100%;height:100%;object-fit:cover;display:block"></div>'+
-     '<div class="ds" style="padding:0;background:#fff"><img src="lotus-cover.jpg" alt="The Lotus investor deck cover" style="width:100%;height:100%;object-fit:cover;display:block"></div>'+
    '</div></div></div><div class="lbase"></div></div>'+
-   '<div class="ctrl"><button id="sPrev" aria-label="Previous slide">&#8592;</button><span class="mono" id="sCount">1 / 2</span><button id="sNext" aria-label="Next slide">&#8594;</button></div></div></div>'+
+   '<div class="ctrl"><button id="sPrev" aria-label="Previous slide">&#8592;</button><span class="mono" id="sCount">1 / 1</span><button id="sNext" aria-label="Next slide">&#8594;</button></div></div></div>'+
    /* tablets */
    '<div class="dev" data-k="email"><div class="tablet"><div class="tscreen"><video muted loop playsinline preload="metadata" poster="email-poster.jpg" src="email.mp4" aria-label="Promotional email for OO5 scrolling on a tablet"></video><button class="vbtn" data-v>Pause</button></div></div></div>'+
    '<div class="dev" data-k="kit"><div class="tablet"><div class="tscreen"><video muted loop playsinline preload="metadata" poster="mediakit-poster.jpg" src="mediakit.mp4" aria-label="The OO5 Media Kit scrolling on a tablet"></video><button class="vbtn" data-v>Pause</button></div></div></div>'+
@@ -1001,7 +1000,7 @@ setStill(still);
 /* ---------- devices ---------- */
 (function(){
   var COPY={
-   deck:['Investor deck','Investor decks supported two raises, USD $250K and USD $1M. Click the screen or use the arrows to move through the slides.','Covers of the OO5 and The Lotus investor decks. Financial slides are left out of this view'],
+   deck:['Investor deck','Investor decks supported two raises, USD $250K and USD $1M.','Cover of the OO5 investor deck. Financial slides are left out of this view'],
    email:['Promotional email','The match deposit offer and the card and crypto payments announcement, designed for the email channel and shown here as it reads on a tablet.','OO5 email design'],
    kit:['Media Kit','One approved source for sales, sponsors and partners. Brand voice, logo files, wallpapers, live promotions and compliance copy sit in one place.','OO5 Media Kit']};
   var cp=$('#devCopy');
