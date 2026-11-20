@@ -543,6 +543,19 @@ body.still .jc::after{transition:none}
 /* instagram reel tab */
 .reelph{position:relative;width:min(clamp(240px,34vh,320px),86vw);aspect-ratio:9/16;max-height:62vh;border-radius:28px;overflow:hidden;background:var(--ink);box-shadow:0 40px 80px -30px rgba(12,25,77,.5)}
 .reelph video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;background:var(--ink)}
+/* mobile QC fixes */
+@media(max-width:900px){#cover .title{margin-top:18px!important}}
+@media(max-width:600px){
+ .scene.fold .eyebrow{max-width:calc(100vw - var(--m) - 150px);gap:10px}
+ .scene.fold .eyebrow::before{width:18px;flex:none}
+ .foldbtn{padding:11px 16px;min-height:44px}
+ .cologos{gap:12px}
+ .cologos img{height:auto;max-height:clamp(56px,10vh,80px);max-width:46%;object-fit:contain}
+ .cologos .sub,.cologos .ind{padding-left:12px;min-width:0;height:auto}
+ .cologos .ind b{font-size:15px;max-width:none}
+ .cologos .sub b{white-space:nowrap}
+ .contact .item a{display:inline-block;padding:11px 0}
+}
 </style>
 </head>
 <body class="at-cover">

@@ -510,6 +510,19 @@ body.still .jc::after{transition:none}
 .clov-facts dt{font-family:'DM Mono',monospace;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink2);opacity:.8}
 .clov-facts dd{margin-top:6px;font-family:'Rozha One',Georgia,serif;font-size:clamp(18px,1.7vw,26px);line-height:1.2;color:var(--ink)}
 @media(max-width:860px){.clov{grid-template-columns:1fr}}
+/* mobile QC fixes */
+@media(max-width:900px){#cover .title{margin-top:18px!important}}
+@media(max-width:600px){
+ .scene.fold .eyebrow{max-width:calc(100vw - var(--m) - 150px);gap:10px}
+ .scene.fold .eyebrow::before{width:18px;flex:none}
+ .foldbtn{padding:11px 16px;min-height:44px}
+ .cologos{gap:12px}
+ .cologos img{height:auto;max-height:clamp(56px,10vh,80px);max-width:46%;object-fit:contain}
+ .cologos .sub,.cologos .ind{padding-left:12px;min-width:0;height:auto}
+ .cologos .ind b{font-size:15px;max-width:none}
+ .cologos .sub b{white-space:nowrap}
+ .contact .item a{display:inline-block;padding:11px 0}
+}
 </style>
 </head>
 <body class="at-cover">
