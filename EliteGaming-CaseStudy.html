@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G4862W180S"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-G4862W180S',{content_group:'Elite Gaming Inc'});</script>
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Elite Gaming Inc Case Study</title>
@@ -1111,6 +1114,25 @@ document.addEventListener('click',function(e){
 });
 
 setActive(0);
+})();
+</script>
+<script>
+/* analytics events */
+(function(){
+  function ev(n,p){try{if(window.gtag)gtag('event',n,p||{})}catch(e){}}
+  document.addEventListener('click',function(e){
+    var a=e.target.closest&&e.target.closest('a[href]');if(!a)return;var h=a.getAttribute('href')||'';
+    if(/\.pdf(\?|$)/i.test(h))ev('pdf_download',{link_url:h});
+    else if(/wa\.me|whatsapp/i.test(h))ev('whatsapp_click',{link_url:h});
+    else if(/^mailto:/i.test(h))ev('email_click',{link_url:h});
+    else if(/zengrowthplaybook/i.test(h))ev('playbook_click',{link_url:h});
+    else if(/instagram\.com|linkedin\.com/i.test(h))ev('social_click',{link_url:h});
+  },true);
+  if('IntersectionObserver' in window){
+    var seen={};var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting&&!seen[x.target.id]){seen[x.target.id]=1;ev('scene_view',{scene_id:x.target.id})}})},{threshold:.5});
+    document.querySelectorAll('.scene').forEach(function(s){io.observe(s)});
+  }
+  document.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('.foldbtn');if(b){var s=b.closest('.scene');ev('scene_expand',{scene_id:s&&s.id})}},true);
 })();
 </script>
 </body>
